@@ -1,5 +1,6 @@
 /*
-For this first set of functions, assume the input array looks like this:
+For this first set of functions, 
+// assume the input array looks like this:
 
 const petsArray = [
     { name: 'spot', type: 'dog' },
@@ -18,7 +19,7 @@ OUTPUT:
 ]*/
 
 export function getDogs(arr) {
-    return [];
+    return arr.filter((x) => x.type === 'dog');
 }
 
 /*
@@ -28,7 +29,8 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    const newArr = arr.map((obj) => obj.name);
+    return newArr;
 }
 
 /*
@@ -76,7 +78,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-     return []
+    return [];
 }
 
 /*
@@ -92,7 +94,6 @@ Output:
 export function makeShoutingArray(arr) {
     return [];
 }
-
 
 /*
 
@@ -226,14 +227,12 @@ export function makeCountObject(arr) {
     return {};
 }
 
-
 /*
 
 Output: 
 (order doesn't matter--but the string must include all keys for the first object in the array)
 'typemakemodelage'
  */
-
 
 export function makeKeysString(arr) {
     return '';
