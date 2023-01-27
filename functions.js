@@ -118,7 +118,9 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    //loop through array
+    const newArr = arr.map((obj) => obj.name.concat(obj.type));
+    return newArr;
 }
 
 /*
@@ -131,9 +133,8 @@ OUTPUT:
 */
 
 export function findByName(name, arr) {
-    return {};
+    return arr.find((obj) => obj.name === name);
 }
-
 /*
 Output:
 
@@ -157,6 +158,7 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
+    // const newArr = new Array(arr);
     return [];
 }
 
